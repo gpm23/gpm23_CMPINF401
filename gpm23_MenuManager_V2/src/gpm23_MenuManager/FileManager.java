@@ -10,8 +10,12 @@ import java.util.Collection;
 import java.io.*;
 
 public class FileManager {
-	
-	
+
+	/**
+	 * Method readEntrees
+	 * @param a string fileName
+	 * @return an ArrayList
+	 */
 	public static ArrayList<Entree> readEntrees(String fileName) {
 		ArrayList<Entree> ent = new ArrayList<>();
 		try {
@@ -25,16 +29,21 @@ public class FileManager {
 			}
 			b.close();
 			f.close();
-			
+
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
 		return ent;
-		
+
 	}
-	
+
+	/**
+	 * Method readSides
+	 * @param a string fileName
+	 * @return an ArrayList
+	 */
 	public static ArrayList<Sides> readSides(String fileName) {
-		
+
 		ArrayList<Sides> sid = new ArrayList<>();
 		try {
 			FileReader f = new FileReader("src/" + fileName);
@@ -47,16 +56,21 @@ public class FileManager {
 			}
 			b.close();
 			f.close();
-			
+
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
 		return sid;
-		
+
 	}
-	
+
+	/**
+	 * Method readSalads
+	 * @param a string fileName
+	 * @return an ArrayList
+	 */
 	public static ArrayList<Salad> readSalads(String fileName) {
-		
+
 		ArrayList<Salad> sal = new ArrayList<>();
 		try {
 			FileReader f = new FileReader("src/" + fileName);
@@ -69,15 +83,20 @@ public class FileManager {
 			}
 			b.close();
 			f.close();
-			
+
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
 		return sal;
 	}
-	
+
+	/**
+	 * Method readDessert
+	 * @param a string fileName
+	 * @return an ArrayList
+	 */
 	public static ArrayList<Dessert> readDessert(String fileName) {
-		
+
 		ArrayList<Dessert> des = new ArrayList<>();
 		try {
 			FileReader f = new FileReader("src/" + fileName);
@@ -90,7 +109,7 @@ public class FileManager {
 			}
 			b.close();
 			f.close();
-			
+
 		}catch(IOException e) {
 			System.out.println(e.getMessage());
 		}
