@@ -120,7 +120,7 @@ public class RecordList {
 		// our file writing examples and the print() method above as a guide.
 		
 		try {
-			FileWriter fw = new FileWriter(filename);
+			FileWriter fw = new FileWriter("src/" + filename);
 			BufferedWriter bw = new BufferedWriter(fw);
 			Node currentNode = head.next;
 			while (currentNode != null) {

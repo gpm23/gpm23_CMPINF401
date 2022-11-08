@@ -41,9 +41,9 @@ public class Lab8 {
 				list.print();
 			}
 		} while (input != null);
-		list.writeToFile("C:\\Users\\Grief Mage\\Documents\\GitHub\\gpm23_CMPINF401\\gpm23_CMPINF401\\gpm23_Lab8\\src\\gpm23_Lab8\\recordList.txt");
+		list.writeToFile("data/recordList.txt");
 
-		//list.writeToFile("data/recordList.txt");
+		
 		
 		
 		/* input = javax.swing.JOptionPane.showInputDialog("Enter the name of a participant to look up");
