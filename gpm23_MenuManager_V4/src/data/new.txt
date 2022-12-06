@@ -1,0 +1,48 @@
+Menu 1: 
+Deep fried chicken breasts
+Deep fried chicken breasts using our traditional powder receipt
+560 calories
+12.0 dollars
+
+Rice
+Plain rice
+160 calories
+3.5 dollars
+
+Quinoa
+Quinoa lightly salted
+120 calories
+4.0 dollars
+
+Ice Cream
+Choose among vanilla, mango, pineapple, chocolate and orange ice cream
+250 calories
+3.2 dollars
+
+Total calories: 1090 calories
+Total Price: 22.7 dollars
+
+Menu 2: 
+Griller Steak
+Carefully selected prime quality steak griller to the point of your preference
+740 calories
+15.0 dollars
+
+Quinoa
+Quinoa
+140 calories
+4.7 dollars
+
+Mixed Vegetables
+Includes small tomatoes, lettuce, cucumber, spinach and arugula
+90 calories
+7.0 dollars
+
+Fruit Salad
+Oranges, bananas, apples, grapes, strawberries
+200 calories
+5.0 dollars
+
+Total calories: 1170 calories
+Total Price: 31.7 dollars
+
