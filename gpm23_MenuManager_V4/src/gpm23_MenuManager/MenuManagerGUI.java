@@ -265,28 +265,30 @@ public class MenuManagerGUI extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				String t = e.getActionCommand();
 				if(t.equals("Details")) {
-					setVisible(true);
-					getContentPane().setLayout(null);
+					JFrame frame2 = new JFrame();
+					frame2.setSize(300, 400);
+					frame2.setVisible(true);
+					frame2.getContentPane().setLayout(null);
 					
 					JLabel lblNewLabel = new JLabel("Entree");
 					lblNewLabel.setBounds(30, 30, 45, 13);
-					getContentPane().add(lblNewLabel);
+					frame2.getContentPane().add(lblNewLabel);
 					
 					JLabel lblNewLabel_1 = new JLabel("Side");
 					lblNewLabel_1.setBounds(30, 120, 45, 13);
-					getContentPane().add(lblNewLabel_1);
+					frame2.getContentPane().add(lblNewLabel_1);
 					
 					JLabel lblNewLabel_2 = new JLabel("Salad");
 					lblNewLabel_2.setBounds(30, 210, 45, 13);
-					getContentPane().add(lblNewLabel_2);
+					frame2.getContentPane().add(lblNewLabel_2);
 					
 					JLabel lblNewLabel_3 = new JLabel("Dessert");
 					lblNewLabel_3.setBounds(30, 300, 45, 13);
-					getContentPane().add(lblNewLabel_3);
+					frame2.getContentPane().add(lblNewLabel_3);
 					
 					textField = new JTextArea();
 					textField.setBounds(130, 27, 800, 60);
-					getContentPane().add(textField);
+					frame2.getContentPane().add(textField);
 					
 					int gh = list.getSelectedIndex();
 					//System.out.println(gh.toString());
@@ -299,43 +301,43 @@ public class MenuManagerGUI extends JFrame{
 					String side = men.get(gh).sid.name + "\n" + men.get(gh).sid.description + "\n" +  "Calories: " + men.get(gh).sid.calories + "  Price: " + men.get(gh).sid.price;
 					textField_1.setText(side);
 					textField_1.setBounds(130, 120, 540, 60);
-					getContentPane().add(textField_1);
+					frame2.getContentPane().add(textField_1);
 					textField_1.setColumns(10);
 					
 					textField_2 = new JTextArea();
 					String salad = men.get(gh).sal.name + "\n" + men.get(gh).sal.description + "\n" +  "Calories: " + men.get(gh).sal.calories + "  Price: " + men.get(gh).sal.price;
 					textField_2.setText(salad);
 					textField_2.setBounds(130, 207, 540, 60);
-					getContentPane().add(textField_2);
+					frame2.getContentPane().add(textField_2);
 					textField_2.setColumns(10);
 					
 					textField_3 = new JTextArea();
 					String dessert = men.get(gh).des.name + "\n" + men.get(gh).des.description + "\n" +  "Calories: " + men.get(gh).des.calories + "  Price: " + men.get(gh).des.price;
 					textField_3.setText(dessert);
 					textField_3.setBounds(130, 297, 540, 60);
-					getContentPane().add(textField_3);
+					frame2.getContentPane().add(textField_3);
 					textField_3.setColumns(10);
 					
 					JLabel lblNewLabel_4 = new JLabel("Total Calories:");
 					lblNewLabel_4.setBounds(30, 397, 77, 13);
-					getContentPane().add(lblNewLabel_4);
+					frame2.getContentPane().add(lblNewLabel_4);
 					
 					JLabel lblNewLabel_5 = new JLabel("Total Price: $");
 					lblNewLabel_5.setBounds(30, 439, 77, 13);
-					getContentPane().add(lblNewLabel_5);
+					frame2.getContentPane().add(lblNewLabel_5);
 					
 					textField_4 = new JTextArea();
 					textField_4.setBounds(130, 390, 96, 36);
 					int calories = men.get(gh).ent.calories + men.get(gh).sid.calories + men.get(gh).sal.calories + men.get(gh).des.calories;
 					textField_4.setText(String.valueOf(calories));
-					getContentPane().add(textField_4);
+					frame2.getContentPane().add(textField_4);
 					textField_4.setColumns(10);
 					
 					textField_5 = new JTextArea();
 					textField_5.setBounds(130, 436, 96, 36);
 					double price = men.get(gh).ent.price + men.get(gh).sid.price + men.get(gh).sal.price + men.get(gh).des.price;
 					textField_5.setText(String.valueOf(price));
-					getContentPane().add(textField_5);
+					frame2.getContentPane().add(textField_5);
 					textField_5.setColumns(10);
 					
 					
