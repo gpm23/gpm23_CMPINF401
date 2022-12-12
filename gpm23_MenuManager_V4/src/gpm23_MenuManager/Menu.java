@@ -85,7 +85,7 @@ public class Menu{
 		return s;
 
 	}
-	
+
 	public String toString() {
 		return this.name + this.description();
 	}
