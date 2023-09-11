@@ -1,4 +1,4 @@
-package gpm23_MenuManager;
+ package gpm23_MenuManager;
 
 public class Menu {
 	Entree e;

@@ -27,8 +27,7 @@ public class MenuTest {
 
 		FileManager f = new FileManager();
 
-		ArrayList<Entree> e = f.readEntrees("data/entrees.txt");
-		System.out.println(e);
+		ArrayList<Entree> e = f.readEntrees("entrees");
 		for(int i = 0; i < e.size(); i++) {
 			System.out.println(e.get(i).name);
 			System.out.println(e.get(i).description);
